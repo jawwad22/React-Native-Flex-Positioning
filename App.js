@@ -6,8 +6,8 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,12 +19,15 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     return (
-      <View style={[styles.container,{
-        justifyContent:'center', //is naw height sa center kiya 
-        alignItems:'flex-end',//is naw vertical sa center kiya
+      <View style={[styles.container, {
+        justifyContent: 'center', //is naw height sa center kiya 
+        alignItems: 'flex-end',//is naw vertical sa center kiya,
+        flexDirection: 'row'
       }]}>
-      <View style={{width:100,height:100,backgroundColor:'purple'}}>
-      </View>
+        <View style={{ width: 100, height: 100, backgroundColor: 'purple' }}>
+        </View>
+        <View style={{ width: 100, height: 100, backgroundColor: 'purple' }}>
+        </View>
       </View>
     );
   }
@@ -33,8 +36,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'tomato',
-  
-  
+    backgroundColor: 'tomato',
+
+
   },
 });
