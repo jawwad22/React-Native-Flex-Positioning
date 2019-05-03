@@ -1,0 +1,3 @@
+rootProject.name = 'position_flex'
+
+include ':app'
