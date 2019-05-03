@@ -20,13 +20,15 @@ export default class App extends Component {
   render() {
     return (
       <View style={[styles.container, {
-        justifyContent: 'center', //is naw height sa center kiya 
-        alignItems: 'flex-end',//is naw vertical sa center kiya,
-        flexDirection: 'row'
+        justifyContent: '', //is naw height sa center kiya 
+        alignItems: 'center',//is naw vertical sa center kiya,
+        flexDirection:'row'
       }]}>
         <View style={{ width: 100, height: 100, backgroundColor: 'purple' }}>
         </View>
         <View style={{ width: 100, height: 100, backgroundColor: 'purple' }}>
+        </View>
+        <View style={{ width: 100, height: 100, backgroundColor: 'yellow' }}>
         </View>
       </View>
     );
